@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: dev
+  messages:
+      encoding: UTF-8
+  http:
+    encoding:
+      force: true
+      charset: UTF-8
+      enabled: true
+
+server:
+  tomcat:
+    uri-encoding: UTF-8
+mybatis:
+  mapper-locations: classpath:mapper/**/*.xml
+  type-aliases-package: com.yuewan.paper.mapper
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
